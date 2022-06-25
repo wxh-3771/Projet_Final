@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(9 13 18) ;
+}
+nav{
+    background-color: #000000;
+    padding:30px 5% 0px 5%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #8f6c07;
+}
+:root{
+    --color:#8f7810;
+}
+
+h1{
+    font-size: 30px;
+    font: normal 50px 'Cookie', cursive;
+    color: white;
+}
+
+h1 span {
+    color: #8f6c07;
+}
+
+div.onglet a{
+    text-decoration: none;
+    color:white;
+    margin:5px;
+    font-size: 1.3em;
+}
+
+div.onglet a:hover{
+    color:var(--color);
+}
+/*   boutton forum    */
+div.onglet a button{
+    padding:5px 15px;
+    font-size: 1em;
+    background-color: inherit;
+    border:2px solid var(--color);
+    color: var(--color);
+    border-radius: 5px;
+    cursor:pointer;
+    transition:color 0.5s,background-color 0.5s;
+}
+div.onglet a button:hover{
+    color:white;
+    background-color: var(--color);
+
+}
+
+.box{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    
+}
+input{
+    position:relative;
+    display:inline-block;
+    font-size: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+}
+input[type="text"]
+{
+    background:#fff;
+    width: 340px;
+    height: 40px;
+    border:none;
+    outline: none;
+    padding:0 25px;
+    border-radius: 25px 0 0 25px;
+
+}
+input[type="submit"]
+{
+    position:relative;
+    border-radius:  0 25px  25px 0 ;
+    width: 150px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #8f6c07;
+}
+/*  forum  */
+.container{
+    margin: 20px;
+    padding: 20px;
+}
+
+.subforum{
+    margin-top:20px;
+}
+
+.subforum-title{
+    
+    padding: 5px;
+    margin:10px;
+    margin-left: 20px;
+}
+
+.subforum-row{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.subforum-column{
+    padding: 10px;
+    margin:4px;
+    border-radius: 5px;
+    background-color:#e7e9ec;
+}
+
+.subforum-description *{
+    margin-block: 0;
+}
+.subforum-description h4 a{
+    text-decoration: none;
+    color:var(--color);
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subforum-devider{
+    display: none;   
+}
+/* For the smartphones */
+@media screen and (max-width: 460px) {
+    .container{
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .subforum-row{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: 65% 35%;
+        
+    }
+
+    .subforum-devider{
+        display: block;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(190, 190, 190, 0), rgba(255, 255, 255, 0.75), rgba(190, 190, 190, 0));
+    }
+
+    
+
+  }
+
+/* For the tablets */
+@media screen and (min-width: 460px) and (max-width: 1024px) {
+    .container{
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .subforum-row{
+        display: grid;
+        grid-template-columns:60%  20%;
+    }
+
+    .subforum-icon i{
+        font-size: 35px;
+    }
+
+    html{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+  }
+
+
+
+/*footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #020202;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 20px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+    
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 50px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #8f6c07;
+}
+/*footer center*/
+.footer-center .footer-links{
+    display: flex;
+    flex-direction: column ;
+    border-bottom: #fff;
+    
+}
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+    vertical-align: middle;
+    margin: 10px 15px;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+    
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #696464;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}    
+/*barre de recherche responsive*/
+@media (max-width: 550px)  {
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    input[type="text"]
+{
+    background:#fff;
+    width: 300px;
+    height: 30px;
+    border-radius: 25px 25px 25px 25px;
+
+}
+input[type="submit"]
+{
+    
+    border-radius:  25px 25px  25px 25px ;
+    width: 50px;
+    height: 40px;
+}}

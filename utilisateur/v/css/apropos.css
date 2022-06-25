@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(9 13 18);
+}
+nav{
+    background-color: #000000;
+    padding:30px 5% 0px 5%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #8f6c07;
+}
+:root{
+    --color:#8f7810;
+}
+
+
+nav .a  h1 {
+    color: #ffffff;
+    font: normal 50px 'Cookie', cursive;
+    margin: 0;
+}
+.a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+    
+}
+
+nav .a  h1 span {
+    color: #8f6c07;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+    margin:5px;
+    font-size: 1.3em;
+    font-family: sans-serif;
+    
+    
+}
+    
+    
+
+ .a .c a:hover{
+    color:var(--color);
+}
+.onglet a{
+    text-decoration: none;
+    color:white;
+    margin:px;
+    font-size: 1.3em;
+    font-family: sans-serif;
+
+}
+.onglet .c{
+    padding: 10px;
+
+}
+div.onglet a:hover{
+    color:var(--color);
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-size: cover;
+    background-image: url(../imgs/apropos.jpg);
+    
+    
+}
+header h2{
+    margin-top: 50px;
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+header h5{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    margin-top: 50px;
+    color: #000000;
+    text-align: center;
+}
+.main{
+    font-size: 20px;
+    background-color: rgb(9 13 18);
+    color: rgb(255, 255, 255);
+    padding: 100px 100px 100px 100px;
+
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #020202;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 20px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+    
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 50px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #8f6c07;
+}
+/*footer center*/
+.footer-center .footer-links{
+    display: flex;
+    flex-direction: column ;
+    border-bottom: #fff;
+    
+}
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+    vertical-align: middle;
+    margin: 10px 15px;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+    
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #696464;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}
+

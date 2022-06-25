@@ -1,0 +1,289 @@
+*{
+    color: white;
+}
+body{
+    background-color:rgb(9,13,18) ;
+}
+
+nav{
+    background-color: #000000;
+    padding:30px 5% 0px 5%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #8f6c07;
+}
+:root{
+    --color:#8f7810;
+}
+
+
+nav h1 {
+    color: #ffffff;
+    font: normal 50px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+nav h1 span {
+    color: #8f6c07;
+}
+div.onglet a{
+    text-decoration: none;
+    color:white;
+    margin:5px;
+    font-size: 1.3em;
+    font-family: sans-serif;
+
+}
+div.onglet a:hover{
+    color:var(--color);
+}
+/*   boutton forum    */
+div.onglet a button{
+    padding:5px 15px;
+    font-size: 1em;
+    background-color: inherit;
+    border:2px solid var(--color);
+    color: var(--color);
+    border-radius: 5px;
+    cursor:pointer;
+    transition:color 0.5s,background-color 0.5s;
+}
+div.onglet a button:hover{
+    color:white;
+    background-color: var(--color);
+
+}
+
+.posts{
+    border: solid 1px #fff;
+    margin-top: 20px;
+    padding: 40px;
+    border-radius: 9px;
+}
+.posts h5 a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-weight:lighter;
+    font-family: sans-serif;
+
+}
+.second-part a{
+    text-decoration: none;
+    margin: 10px;
+    font-size:22px;
+    color:grey;
+    cursor: pointer;
+    margin-left: 0px;
+
+}
+.second-part a:hover{
+    background-color: #8f6c07;
+    color: white;
+    border-radius: 10px;
+
+}
+.second-part p{
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer-distributed {
+    background-color: #020202;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 20px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+    
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 50px 'Cookie', cursive;
+    margin: 0;
+}
+
+
+.footer-distributed h3 span {
+    color: #8f6c07;
+}
+/*footer center*/
+.footer-center .footer-links{
+    display: flex;
+    flex-direction: column ;
+    border-bottom: #fff;
+    
+}
+/* Footer Center */
+
+.footer-distributed .footer-center {
+    width: 35%;
+    vertical-align: middle;
+    margin: 10px 15px;
+}
+
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+    width: 30%;
+    
+}
+
+.footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #696464;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+
+
+.footer-distributed .footer-icons {
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+
+@media (max-width: 880px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .footer-distributed .footer-center i {
+        margin-left: 0;
+    }
+}    
+/*posts box*/
+.posts{
+    border: solid 1px #ffffff;
+    margin-top: 20px;
+    padding: 40px;    
+    border-radius: 9px;
+}
+.posts h5 a{
+    text-decoration: none;
+    color:white;
+    font-size: 22px;
+    font-weight:lighter;
+    font-family:sans-serif;
+
+}
+.second-part a{
+    text-decoration: none;
+    margin:10px;
+   font-size: 22px;
+   color:grey;
+   cursor: pointer;
+   margin-left: 0px;
+   
+
+}
+.second-part a:hover{
+    background-color:#8f6c07 ;
+    color: white;
+    border-radius: 10px;
+}
+.second-part p{
+    color:white;
+    font-size: 20px;
+    font-weight:lighter;
+    font-family:sans-serif;
+}
+/* nav bar responsive*/
+@media (max-width: 635px) {
+    nav h1{
+        font-size:1em;
+    }
+    nav .onglet a{
+        font-size:0.8em;
+    }
+    nav .onglet a button{
+    padding:3px 10px;
+    font-size: 0.8em;
+    border:1px solid var(--color);
+    }
+    .profil .text h2{
+        font-size:1.3em;
+    }
+}   
+
+    
