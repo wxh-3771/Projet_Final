@@ -40,8 +40,8 @@
                         <input type="text" name="title" value="<?= $question_title; ?>">
                     </div>
                     <div class="text">
-                        <label for="exampleInputEmail1" class="form-label">Description de la question</label>
-                        <textarea class="form-control" name="descript"><?= $question_description; ?></textarea>
+                      <label>Categorie de la question</label>
+                      <input type="text" name="title" value="<?= $CategorieInfos['nom']; ?>" disabled="disabled">
                     </div>
                     <div class="text">
                         <label>Contenu de la question</label>

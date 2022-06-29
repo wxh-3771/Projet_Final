@@ -10,6 +10,8 @@ require('../c/admin_secu.php');
     
     <h1>
      <a href ="../c/admin_logout.php"><button>Déconnexion</button></a>
+     <a href ="../../utilisateur/v/php/forum.php"><button>Forum</button></a>
+     <a href ="signalements.php"><button>Forum</button></a>
 
     </h1>
     

@@ -84,6 +84,12 @@
                               <div class="b">
                                  <h4><?= $answer['contenu']; ?></h4>
                               </div>
+                            <form action= "../../c/questions/signaler.php" method="POST">
+                                <input class="btn" type="text" name="rep_id" value="<?php echo $answer['id']; ?>" hidden>
+                                <input class="btn" type="text" name="user_signaled" value="<?php echo $answer['email_auteur']; ?>" hidden>
+                                <input class="btn" type="submit" name="signaler" value="Signaler">
+                            </form>
+
 
                               <!-- <div class="b">
                                  <h5><?//= $answer['date_publication']; ?></h5>

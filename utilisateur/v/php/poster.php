@@ -23,7 +23,7 @@
 
 <div class="formstyle">
 <center>
-<h1>Ajouter un post</h1>
+<h1>Ajouter une Question dans le Forum</h1>
 </center>
 </div>
 <div style>
@@ -34,10 +34,10 @@
    <fieldset class="account-info">
      <label>
        Titre
-       <input type="text" name="title" class="sub">
-       Description
-      </label>
-      <textarea rows="2" cols="60" name="descript" class="textarea"></textarea>
+       <input type="text" name="title" class="sub"> 
+       Categorie
+     </label>
+      <input value="<?=$categorie ;?>" class="textarea" type="text" disabled="disabled">
       <label>Contenu de la question</label>
       <textarea rows="18" cols="60" name="content" class="textarea"></textarea>
   </fieldset>

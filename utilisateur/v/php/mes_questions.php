@@ -37,7 +37,11 @@
 
      <?php 
           while($question = $getAllMyQuestions->fetch()){
-            ?>
+            
+                //Recuperer le nom de la categorie qui correspond au code de la question
+                require('../../c/questions/nom_categorie.php');
+               ?>
+
               <div class="posts ">
                   <h5>
                       <a href="article.php?id=<?= $question['id']; ?>">
@@ -45,9 +49,11 @@
                       </a>
                   </h5>
             
-                  <div class="second-part">
+                  <div class="second-part">                            
+                    <h4><?= $CategorieInfos['nom']; ?></h4>
+
                         <p>
-                            <?= $question['descript']; ?>
+                            <?= $question['contenu']; ?>
                         </p>
                         <a href="article.php?id=<?= $question['id']; ?>"> Accéder a la question</a>
                         <a href="modifier_mes_questions.php?id=<?= $question['id']; ?>"> Modifier la question</a>

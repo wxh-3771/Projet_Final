@@ -1,9 +1,12 @@
 <?php
 session_start();
 require('../../m/conbd.php');
-if (isset($_SESSION["auth"])) {
+if (isset($_SESSION['auth'])) {
     header("Location: profil.php?id=".$_SESSION['email']);// rediriger à la page bienvenue
 }
+// elseif (isset($_SESSION['admin'])){
+//     header("Location : ../../../admin/v/home.php");
+// }
 
 //Valider le formulaire
 if(isset($_POST['validate'])){
@@ -28,17 +31,21 @@ if(isset($_POST['validate'])){
 
             //Vérifier si le mot de passe est correct
             if(password_verify($user_password, $usersInfos['mdp'])){
-            
-                //Authentifier l'utilisateur sur le site et récupérer ses données dans des variables globales sessions
-                $_SESSION['auth'] = true; //On va l'utilisé pour savoir est que l'utilisateur est connecté ou pas
-                $_SESSION['id'] = $usersInfos['id'];
-                $_SESSION['lastname'] = $usersInfos['nom'];
-                $_SESSION['firstname'] = $usersInfos['prenom'];
-                $_SESSION['pseudo'] = $usersInfos['pseudo'];
-                $_SESSION['email'] = $usersInfos['email'];
+                if($usersInfos['valeur_par_defaut'] == 0){
+                    //Authentifier l'utilisateur sur le site et récupérer ses données dans des variables globales sessions
+                    $_SESSION['auth'] = true; //On va l'utilisé pour savoir est que l'utilisateur est connecté ou pas
+                    $_SESSION['id'] = $usersInfos['id'];
+                    $_SESSION['lastname'] = $usersInfos['nom'];
+                    $_SESSION['firstname'] = $usersInfos['prenom'];
+                    $_SESSION['pseudo'] = $usersInfos['pseudo'];
+                    $_SESSION['email'] = $usersInfos['email'];
 
-                //Rediriger l'utilisateur vers sa page de profil 
-                header("Location: profil.php?email=".$_SESSION['email']);
+                    //Rediriger l'utilisateur vers sa page de profil 
+                    header("Location: profil.php?email=".$_SESSION['email']);
+                }else{
+                    $errorMsg = "Attention, Vous etes bannis !";
+                }
+                
                 
 
             }else{

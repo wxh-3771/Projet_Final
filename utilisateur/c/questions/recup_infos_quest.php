@@ -14,16 +14,17 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
     if($checkIfQuestionExists->rowCount() > 0){
 
         //Récupérer les données de la question
-        $questionInfos = $checkIfQuestionExists->fetch();
-        if($questionInfos['email_auteur'] == $_SESSION['email']){
+        $question = $checkIfQuestionExists->fetch();
+        if($question['email_auteur'] == $_SESSION['email']){
             
-            $question_title = $questionInfos['titre'];
-            $question_description = $questionInfos['descript'];
-            $question_content = $questionInfos['contenu'];
+            $question_title = $question['titre'];
+            // $question_categorie = $questionInfos['categorie'];
+            $question_content = $question['contenu'];
 
-            $question_description = str_replace('<br />', '', $question_description);
             $question_content = str_replace('<br />', '', $question_content);
 
+            //Recuperer le nom de la categorie qui correspond au code de la question
+           require('../../c/questions/nom_categorie.php');
         }else{
             $errorMsg = "Vous n'êtes pas l'auteur de cette question";
         }

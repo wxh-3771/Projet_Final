@@ -31,7 +31,7 @@ require('../c/membres_action.php');
                   </div>
 
                   <div>
-                     <h4>Nombre de signalement de cet utilisateur par les autres membres : <?= $users['nbre_signalement']; ?></h4>
+                     <h4>Nombre de signalement de cet utilisateur par les autres membres : </h4>
                   </div>
              </div>
           </fieldset>

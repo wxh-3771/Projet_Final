@@ -19,6 +19,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
 
         //Stocker les datas de la question dans des variables propres.
         $question_title = $questionsInfos['titre'];
+        $question_categorie = $questionsInfos['categorie'];
         $question_content = $questionsInfos['contenu'];
         $question_id_author = $questionsInfos['email_auteur'];
         $question_pseudo_author = $questionsInfos['pseudo_auteur'];

@@ -1,9 +1,12 @@
 <?php
 
 require('../../m/conbd.php');
-if (!isset($_SESSION["auth"])) {
-    header("Location: connexion.php"); //rediriger vers la page login
+if (!isset($_SESSION['auth']) AND isset($_SESSION['admin'])) {
+    header("Location: ../../../admin/v/home.php"); //rediriger vers la page login
     exit();
+}elseif(!isset($_SESSION['auth'])){
+    header("Location: connexion.php");
+
 }
 
 //Récupérer l'identifiant de l'utilisateur

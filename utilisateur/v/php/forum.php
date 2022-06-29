@@ -1,6 +1,7 @@
 <?php 
  session_start();
  require('../../c/questions/barre_recherche.php');
+ require('../../c/url.php');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -41,8 +42,23 @@
                 <h1>Forum </h1>
             </div>
 
+
+            <?php
+             while($c = $categories->fetch()) {
+             ?>
+
+           <tr>
+             <td class="main">
+                 <h4><a href="../../v/php/questions_par_categorie.php?categorie=<?= url_custom_encode($c['nom']) ?>">
+                 <?= $c['nom'] ?></a></h4>
+              </td>
+          </tr>
+          <?php } ?>
+
+
             <?php 
                 while($question = $getAllQuestions->fetch()){
+                   require('../../c/questions/nom_categorie.php');
                    ?>
                    <div class="subforum-row">
                        <div class="subforum-description subforum-column">
@@ -50,7 +66,7 @@
                             <?= $question['titre']; ?>
                             </a></h4>
                             <br>
-                            <p>Le contenu : <?= $question['descript']; ?></p>
+                            <p>catégorie : <?= $CategorieInfos['nom']; ?></p>
                        </div>
                 
                       <div class="subforum-info subforum-column">
