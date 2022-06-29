@@ -18,7 +18,7 @@
 <body>
   <nav>
         <?php 
-         require('../includes/control_nav.php');
+         include('../includes/control_nav.php');
         ?>
         
         <div class="Box">
@@ -31,7 +31,7 @@
         </div>
 
         <?php 
-            require('../includes/navbar.php');
+           include('../includes/navbar.php');
        ?>      
   </nav>
     

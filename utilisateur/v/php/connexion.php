@@ -32,7 +32,7 @@
              <a href="inscription.php">S'inscrire </a> 
            </div>
            <div class="btn">
-             <a href="acceuil.php">Retour au site </a>
+             <a href="accueil.php">Retour au site </a>
            </div>
         </form> 
     </div>

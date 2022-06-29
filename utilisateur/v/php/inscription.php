@@ -35,7 +35,7 @@
                 <a href="connexion.php">Se connecter </a>
             </div>
             <div class="btn" type="button">
-                <a href="acceuil.php">Retour au site </a>
+                <a href="accueil.php">Retour au site </a>
             </div>
                 
         </form>
