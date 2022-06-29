@@ -19,58 +19,58 @@
 </head>
 
 <body>
-    <?php 
-        require('../includes/navbar.php');
-    ?>
+      <?php 
+         require('../includes/navbar.php');
+      ?>
 
-  <section class="hero-section">
-        <h3 class="hero-heading"> Bienvenue sur notre Forum étudiant.</h3>
-        <h4>Joignez-vous à un groupe d'étudiants et à un environnement en ligne accueillant.</h4>
-        
-    </section>
+     <section class="hero-section">
+         <h3 class="hero-heading"> Bienvenue sur notre Forum étudiant.</h3>
+         <h4>Joignez-vous à un groupe d'étudiants et à un environnement en ligne accueillant.</h4>
+         
+      </section>
 
-    <section id="list-monuments">
-      <div class="heading text-center">
-          <h3 class="top-heading ">Découvrez, échangez et apprenez !</h3>
-      </div>
-    </section>
-
-    <div class="section-container">
-      <div class="columns image" style="background-image:url('../imgs/acceuil3.jpg')">
-         &nbsp;
-      </div>
-
-      <div class="columns content">
-         <div class="content-container">
-            <h5>Forum</h5>
-            <p> Découvrez quelques-unes 
-              de nos discussions, partagez vos connaissances et participez à la conversation 
-              avec les autres utilisateurs!</p>
+      <section id="list-monuments">
+         <div class="heading text-center">
+            <h3 class="top-heading ">Découvrez, échangez et apprenez !</h3>
          </div>
-      </div>
-   </div>
+      </section>
 
-   <div class="section-container">
-      <div class="columns content">
-         <div class="content-container">
-                <h5>Informations utiles!</h5>
-                <p>Découvrez et apprenez plus à propos de vos formations !</p>     
+      <div class="section-container">
+         <div class="columns image" style="background-image:url('../imgs/acceuil3.jpg')">
+            &nbsp;
+         </div>
+
+         <div class="columns content">
+            <div class="content-container">
+               <h5>Forum</h5>
+               <p> Découvrez quelques-unes 
+               de nos discussions, partagez vos connaissances et participez à la conversation 
+               avec les autres utilisateurs!</p>
+            </div>
          </div>
       </div>
 
-      <div class="columns image" style="background-image:url('../imgs/acceuil1.jpg')">
-         &nbsp;
+      <div class="section-container">
+         <div class="columns content">
+            <div class="content-container">
+                  <h5>Informations utiles!</h5>
+                  <p>Découvrez et apprenez plus à propos de vos formations !</p>     
+            </div>
+         </div>
+
+         <div class="columns image" style="background-image:url('../imgs/acceuil1.jpg')">
+            &nbsp;
+         </div>
       </div>
-   </div>
 
-    <?php 
-      require('../includes/footer.php');
-    ?>
+      <?php 
+         require('../includes/footer.php');
+      ?>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
       
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+         
  
 </body>
 </html>
