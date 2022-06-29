@@ -22,14 +22,14 @@
 
 </head>
 <body>
-   <section class="hero" style="background-color: black;">
+   <section class="hero">
       <?php 
             require('../includes/navbar.php');
         ?>
    
         <header class="profil">
             <div class="text">
-                <h1>Mes Questions : </h1>
+                <h1>Mes Propres Questions Postées : </h1>
                 <br>
             </div>
         </header>

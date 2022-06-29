@@ -1,56 +1,23 @@
 *{
-    color: white;
-}
-body{
-    background-color:rgb(9,13,18) ;
+    color: rgb(0, 0, 0);
 }
 
-.posts{
-    border: solid 1px #fff;
-    margin-top: 20px;
-    padding: 40px;
-    border-radius: 9px;
-}
-.posts h3 a{
-    text-decoration: none;
-    color: white;
-    font-size: 22px;
-    font-weight:lighter;
-    font-family: sans-serif;
-
-}
-.second-part a{
-    text-decoration: none;
-    margin: 10px;
-    font-size:22px;
-    color:grey;
-    cursor: pointer;
-    margin-left: 0px;
-
-}
-.second-part a:hover{
-    background-color: #8f6c07;
-    color: white;
-    border-radius: 10px;
-
-}
-.second-part p{
-    color: white;
-    font-size: 20px;
-    font-weight: lighter;
-    font-family: sans-serif;
+header h1{
+    margin-left: 2%;
 }
 
 /*posts box*/
 .posts{
-    border: solid 1px #ffffff;
-    margin-top: 20px;
-    padding: 40px;    
+    border: solid 3px #000000;
+    margin-top: 10px;
+    padding: 20px;
+    width: 70%;
+    margin-left: 15%;  
     border-radius: 9px;
 }
 .posts h3 a{
     text-decoration: none;
-    color:white;
+    color:rgb(0, 0, 0);
     font-size: 22px;
     font-weight:lighter;
     font-family:sans-serif;
@@ -60,7 +27,7 @@ body{
     text-decoration: none;
     margin:10px;
    font-size: 22px;
-   color:grey;
+   color:rgb(0, 0, 0);
    cursor: pointer;
    margin-left: 0px;
    
@@ -68,11 +35,11 @@ body{
 }
 .second-part a:hover{
     background-color:#8f6c07 ;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
 }
 .second-part p{
-    color:white;
+    color:rgb(0, 0, 0);
     font-size: 20px;
     font-weight:lighter;
     font-family:sans-serif;
