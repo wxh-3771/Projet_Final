@@ -1,13 +1,10 @@
 *{
-    color: white;
-}
-body{
-    background-color:rgb(9,13,18) ;
+    color: rgb(0, 0, 0);
 }
 
+
 .profil .text h2{
-    color:white;
-    font-size: 2em;
+    color:rgb(0, 0, 0);
     font-weight: lighter;
     margin-left : 70px;
     font-family:cursive;
@@ -16,8 +13,7 @@ body{
     margin:30px;
 }
 .profil p,h4{
-    color:white;
-    font-size: 19px;
+    color:rgb(0, 0, 0);
     margin-left: 100px;
     font-weight: lighter;
     font-family: cursive;
@@ -27,56 +23,13 @@ body{
     margin-left: 50px;
 }
 .profil{
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid rgb(0, 0, 0);
     margin-left: 50px;
     margin-right: 50px;
 }
 
-
-/*posts box*/
-.posts{
-    border: solid 1px #ffffff;
-    margin-top: 20px;
-    padding: 40px;    
-    border-radius: 9px;
-}
-.posts h5 a{
-    text-decoration: none;
-    color:white;
-    font-size: 22px;
-    font-weight:lighter;
-    font-family:sans-serif;
-
-}
-.second-part a{
-    text-decoration: none;
-    margin:10px;
-   font-size: 22px;
-   color:grey;
-   cursor: pointer;
-   margin-left: 0px;
-   
-
-}
-.second-part a:hover{
-    background-color:#8f6c07 ;
-    color: white;
-    border-radius: 10px;
-}
-.second-part h3{
-    color:white;
-    font-size: 20px;
-    font-weight:lighter;
-    font-family:sans-serif;
-}
-
-.profil .text h2{
-        font-size:1.3em;
-    }
-
     
-    
-.second-part h3{
-    color: aqua;
+h5{
+    color: rgb(186, 154, 10);
     text-decoration: underline;
 }

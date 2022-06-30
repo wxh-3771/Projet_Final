@@ -1,13 +1,14 @@
-body{
-    background-color:rgb(9,13,18) ;
-}
-
 .qst{
-   
-    margin-top: 50px;
-    margin-left: 60px;
-    color: white;
     margin-right:50px ;
+    margin-top: 30px;
+    margin-left: 60px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border: 2px solid rgb(24, 23, 23);
 }
 
 h3{
@@ -35,17 +36,19 @@ h3{
 }
 
 .rep label{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    margin-left: 4%;
 }
 
 .rep textarea{
  background: inherit;
-   border: 3px solid #fff;
+   border: 1px solid rgb(0, 0, 0);
     border-radius: 10px;
-   color:white;
+   color:rgb(0, 0, 0);
    padding: 6px;
    margin-top: 6px; 
+   margin-left: 4%;
 }
 
 .a{
@@ -63,10 +66,11 @@ h3{
     border-radius: 5px;
     cursor:pointer;
     transition:color 0.5s,background-color 0.5s;
+    margin-left: 61%;
 }
 
 .rep button:hover{
-    color:white;
+    color:rgb(235, 19, 19);
     background-color: var(--color);
 }
 
@@ -75,7 +79,7 @@ h3{
 }
 
 .rep1 .b h4{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .f {
@@ -90,5 +94,5 @@ h3{
 }
 
 .erro p{
-    color: white;
+    color: rgb(0, 0, 0);
 }
