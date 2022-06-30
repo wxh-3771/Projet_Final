@@ -36,9 +36,9 @@
                 <?php                
                    if(isset($_SESSION['admin'])){
                      ?>
-                     <a href="../../../admin/v/home.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Home</button></a>
-                     <a href="../../../admin/v/membres.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Membres du Forum</button></a>
-                     <a href="../../../admin/c/admin_logout.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Déconnexion</button></a>
+                     <a href="../../admin/v/home.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Home</button></a>
+                     <a href="../../admin/v/membres.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Membres du Forum</button></a>
+                     <a href="../../admin/c/admin_logout.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Déconnexion</button></a>
                      <?php
                    }
                 ?>

@@ -2,9 +2,6 @@
 session_start();
 require('../../m/conbd.php');
 
-//signalement 
-// SELECT users.email,users.nom,users.prenom,users.pseudo FROM signales INNER JOIN users ON signales.user_signaled = users.email;
-//count()
 
 if(isset($_POST['signaler'])){
     $rep_id = $_POST['rep_id'];
