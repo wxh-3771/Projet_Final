@@ -9,7 +9,7 @@ if(isset($_SESSION['admin'])){
      if($_POST['nbr']>=3){
          $query = $bdd->query("UPDATE users SET valeur_par_defaut = 1 WHERE email = '$user_signaled' ");
          if($query){
-             header("Location: ../../v/php/forum.php");
+             header('Location: ../v/home.php');
             }
        }
    }

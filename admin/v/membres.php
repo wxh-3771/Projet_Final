@@ -40,7 +40,7 @@ require('../c/membres_action.php');
                      <th>Prenom</th>
                      <th>Pseudo</th>
                      <th>Email</th>
-                     <!-- <th>Etat</th> -->
+                     <th>Etat</th>
                 </tr>
   
                   <tr>
@@ -48,7 +48,31 @@ require('../c/membres_action.php');
                      <td><?= $users['prenom']; ?></td>
                      <td><?= $users['pseudo']; ?></td>
                      <td><?= $users['email'];?></td>
-                     <!-- <td><?//= $users['pseudo']; ?></td> -->
+                     <td>
+                        <?php 
+                          //Dans le cas contraire où l'utilisateur n'est pas banni on affiche un bouton pour le bannir
+                         if($users['valeur_par_defaut'] == 0){
+                            require('../c/ban.php');
+                            ?>
+                            <form method="POST">
+                               <input class="btn" type="text" name="nbr" value="<?php  ?>" hidden>
+                               <input class="btn" type="text" name="user_signaled" value="<?php  ?>" hidden>
+                               <button class="btn" type="submit" name="ban" >Bannir</button>
+                            </form>
+
+                            <?php 
+                            //Donc ici l'utilisateur est banni alors on affiche un bouton pour le debannir
+                            }elseif($users['valeur_par_defaut'] == 1){
+                            require('../c/unban.php');
+                            ?>
+                             <form  method="POST">
+                               <input class="btn" type="text" name="user_signaled" value="<?php  ?>" hidden>
+                               <button class="btn" type="submit" name="unban" >Debannir</button>
+                             </form>
+                             <?php
+                           }
+                        ?>
+                     </td>
                  </tr>
              </table>
              <br>

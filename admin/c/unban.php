@@ -7,7 +7,7 @@ if (isset($_SESSION['admin'])){
        $user_signaled = $_POST['user_signaled'];
        $query = $bdd->query("UPDATE users SET valeur_par_defaut = 0 WHERE email = '$user_signaled' ");
        if($query){
-         header("Location: ../../v/php/forum.php");
+        echo "Vous venez de debannir ce membre ".$user_signaled." et il pourra desorme reacceder au Forum";
         }
    }
 }

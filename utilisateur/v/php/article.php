@@ -91,7 +91,7 @@
 
                       <form action= "../../c/questions/signaler.php" method="POST">
                           <input class="btn" type="text" name="rep_id" value="<?php echo $answer['id']; ?>" hidden>
-                          <input class="btn" type="text" name="user_signaled" value="<?php echo $answer['email_auteur']; ?>" hidden>
+                          <input class="btn" type="text" name="user_signaled" value="<?php echo $answer['email_auteur']; ?>" hidden >
                           <input class="btn-btn" type="submit" name="signaler" value="Signaler">
                       </form>           
                     </div>  
