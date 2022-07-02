@@ -21,47 +21,51 @@
 
       <title>Forum</title>
     </head>
+    
+<body>
+   <?php 
+      require('../includes/navbar.php');
+   ?>
+  
+   <div>      
+    <div class="Box">
+      <form method="GET">
+        <input type="text" name="search" placeholder="Rechercher dans le forum...">
+        <input type="submit" name="validate" value="Rechercher">
+     </form>
+    </div>     
+   </div>
 
-   <body>
-
-      <?php 
-        require('../includes/navbar.php');
-      ?>
-
-      <nav>      
-        <div class="Box">
-          <form method="GET">
-          <input type="text" name="search" placeholder="Rechercher dans le forum...">
-          <input type="submit" name="validate" value="Rechercher">
-        </form>
-        </div>     
-      </nav>
-      
-
-     <div class="container">
-       <div class="subforum">
-          <div class="subforum-title">
-            <h1>Forum </h1>
-          </div>
-
-
-          <?php
+  <div class="container">
+    <div class="subform">
+      <div class="subform-title">
+        <h1>Les Catégories</h1>
+        <?php
             while($c = $categories->fetch()) {
             ?>
 
-              <tr>
-                <td class="main">
+              <div>
+                <div class="main">
                   <h6><a href="../../v/php/questions_par_categorie.php?categorie=<?= url_custom_encode($c['nom']) ?>">
                   <?= $c['nom'] ?></a></h6>
-                </td>
-              </tr>
+                </div>
+              </div>
               <?php 
             } 
           ?>
+    </div>
+      </div>
+     
+    
+      
+    
 
-          <br>
-
-          <?php 
+  </div>
+  <div class="forum">
+        <div class="subform-title">
+          <h1>Forum</h1>
+        </div>
+        <?php 
             while($question = $getAllQuestions->fetch()){
               require('../../c/questions/nom_categorie.php');
               ?>
@@ -82,14 +86,11 @@
               <?php
             }
           ?>
-       </div> 
-     </div>
-      
-     <?php 
+      </div>
+  <?php 
         require('../includes/footer.php');
       ?>
-      
-     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> 
-   </body>
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> 
+ </body>
 </html>
