@@ -1,8 +1,9 @@
 <?php 
-    session_start();
+   require('../../c/security.php');
     require('../../c/questions/article_action.php');
     require('../../c/questions/reponse_quest.php');
     require('../../c/questions/reponses_toutes.php');
+    require('../../c/questions/signaler.php');
     
 ?>
 <!DOCTYPE html>
@@ -89,7 +90,7 @@
                         <h4><?= $answer['contenu']; ?></h4> 
                       </div>      
 
-                      <form action= "../../c/questions/signaler.php" method="POST">
+                      <form action= "" method="POST">
                           <input class="btn" type="text" name="rep_id" value="<?php echo $answer['id']; ?>" hidden>
                           <input class="btn" type="text" name="user_signaled" value="<?php echo $answer['email_auteur']; ?>" hidden >
                           <input class="btn-btn" type="submit" name="signaler" value="Signaler">
