@@ -52,23 +52,14 @@ require('../c/membres_action.php');
                         <?php 
                           //Dans le cas contraire où l'utilisateur n'est pas banni on affiche un bouton pour le bannir
                          if($users['valeur_par_defaut'] == 0){
-                            require('../c/ban.php');
                             ?>
-                            <form method="POST">
-                               <input class="btn" type="text" name="nbr" value="<?php  ?>" hidden>
-                               <input class="btn" type="text" name="user_signaled" value="<?php  ?>" hidden>
-                               <button class="btn" type="submit" name="ban" >Bannir</button>
-                            </form>
+                           <p>Ce membre n'est pas banni</p>
 
                             <?php 
                             //Donc ici l'utilisateur est banni alors on affiche un bouton pour le debannir
                             }elseif($users['valeur_par_defaut'] == 1){
-                            require('../c/unban.php');
                             ?>
-                             <form  method="POST">
-                               <input class="btn" type="text" name="user_signaled" value="<?php  ?>" hidden>
-                               <button class="btn" type="submit" name="unban" >Debannir</button>
-                             </form>
+                            <p>Vous avez Banni ce Mmebre</p>
                              <?php
                            }
                         ?>
