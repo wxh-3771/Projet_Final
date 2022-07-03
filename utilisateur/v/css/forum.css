@@ -3,17 +3,18 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(9 13 18) ;
+    
+  
 }
 
 nav{
-    background-color: #000000;
+   
     padding:25px 0% 25px 59%;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 4px solid #8f6c07;
+   
 }
 
 
@@ -23,12 +24,11 @@ h1{
     color: #8f6c07;
 }
 
-.box{
-    position: absolute;
-    top: 50%;
-    left:50%;
-   
+.Box {
+    margin-top: 50px;
+    margin-left: 100px;
     
+   
 }
 input{
     position:relative;
@@ -39,7 +39,7 @@ input{
 }
 input[type="text"]
 {
-    background:#fff;
+    background:rgb(238, 235, 235);
     width: 340px;
     height: 40px;
     border:none;
@@ -58,16 +58,19 @@ input[type="submit"]
     outline: none;
     cursor: pointer;
     background: #8f6c07;
-}
+} 
 /*  forum  */
 .container{
     margin: 20px;
-    padding: 20px;
+    padding: 80px;
+}
+.forum{
+    margin-top:100px;
+    margin-right: 100px;
+    margin-left: 100px;
 }
 
-.subforum{
-    margin-top:20px;
-}
+
 
 .subforum-title{
     
@@ -79,6 +82,8 @@ input[type="submit"]
 .subforum-row{
     display: grid;
     grid-template-columns: 80% 20%;
+    
+    
 }
 
 .subforum-column{
@@ -93,7 +98,7 @@ input[type="submit"]
 }
 .subforum-description h4 a{
     text-decoration: none;
-    color:var(--color);
+    color:black;
 }
 
 .center{
@@ -178,3 +183,30 @@ input[type="submit"]
     width: 50px;
     height: 40px;
 }}
+
+
+h6 a{
+    color: black;
+    background-color: rgb(197, 193, 193);
+    padding: 4px;
+    margin: 4px;
+    border-radius: 10px;
+    
+   
+    
+}
+
+h6{
+    font-size:20px;
+    padding:4px;
+}
+h6 a:hover{
+    text-decoration: none;
+    color:white;
+    background-color: #8f6c07;
+    align-items: baseline;
+}
+.main{
+    float: left;
+    padding-bottom: 5px;
+}
