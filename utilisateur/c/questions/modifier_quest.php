@@ -1,6 +1,6 @@
 <?php
 
-require('../../m/conbd.php');
+// require('../../m/conbd.php');
 
 //Validation du formulaire
 if(isset($_POST['validate'])){

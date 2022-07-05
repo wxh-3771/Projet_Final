@@ -1,19 +1,18 @@
 <?php
-    require('../../c/security.php');
-    require('../../c/questions/recup_infos_quest.php');
-    require('../../c/questions/modifier_quest.php');
+require('../c/admin_secu.php');
+require('../c/modifier.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="fr">
         <head>
             <meta charset="UTF-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" type="imgs/png" href="../imgs/log.png">
-            <title>Modifier Mes Questions</title>
+            <title>Modifier Les Questions</title>
             
-            <link rel="stylesheet" href="../css/footer.css">
-            <link rel="stylesheet" href="../css/navbar.css">
+            <link rel="icon" type="imgs/png" href="../../utilisateur/v/imgs/log.png">
+            <link rel="stylesheet" href="../../utilisateur/v/css/navbar.css">
 
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -25,12 +24,11 @@
 
         <section class="hero">
             <?php 
-                require('../includes/navbar.php');
+              require('../../utilisateur/v/includes/navbar.php');
             ?>
             <br><br>
             
                 <div class="w">
-                    <?php require('../../c/messages/msgerror_modification.php') ; ?>
                     
                     <?php 
                         if(isset($question_content)){ 
@@ -42,6 +40,7 @@
                                 </div>
                                 <div class="text">
                                 <label>Categorie de la question</label>
+                                <?php require('../../utilisateur/c/questions/nom_categorie.php');?>
                                 <input type="text" name="title" value="<?= $CategorieInfos['nom']; ?>" disabled="disabled">
                                 </div>
                                 <div class="text">
@@ -57,10 +56,6 @@
                     
 
                 </div>
-
-                <?php 
-                require('../includes/footer.php');
-                ?>
             </section>
 
             <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

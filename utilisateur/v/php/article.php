@@ -46,15 +46,15 @@
             <br><br>
               <fieldset class="f">
                 <section class="qst">
-                  <h3><?= $question_title; ?></h3>
+                  <h3>Titre: "<?= $question_title; ?>"</h3>
+
+                  <small> 
+                    <p> User : <?=$question_pseudo_author;?> <br>
+                     Demandé le <?=$question_publication_date;?>.</p>
+                  </small> 
                   <hr>
-                  <p><?= $question_content; ?></p>
-                    
-                  <!-- afficher les informations de la question avec le titre  -->
-                  <small>
-                    User : <?=$question_pseudo_author;?> 
-                    <br>Le <?=$question_publication_date;?>
-                  </small>
+                  <p class="content"><?= $question_content; ?></p>
+                  <!-- afficher les informations de la question avec le titre  -->                   
               </section>
             </fieldset>
 
@@ -81,21 +81,33 @@
                     ?>
                     <fieldset class="d"> 
                       <div class="rep1">
-                        <div class="a">
-                          <h4> User :  <?= $answer['pseudo_auteur']; ?></h4>
-                          <p>Le : <?= $answer['date_publication'] ?></p>
-                      </div>      
-                                      
-                      <div class="b">
-                        <h5><?= $answer['contenu']; ?></h5> 
-                      </div>      
+                          <div class="date">
+                            <p> <?= $answer['date_publication'] ?></p>
+                          </div>
 
-                      <form action= "" method="POST" class="signaler">
+                          <div class="a">
+                            <h4> User :  <?= $answer['pseudo_auteur']; ?></h4>
+                            <hr>
+                         </div>  
+                        
+                       <div class="b">
+                        <?php 
+                          $array = preg_split('/[,.\-@n ]/', $answer['contenu'] ); 
+                          foreach($array as $contenu){ ?>
+                            <h5><?= $contenu; ?></h5> 
+                           <?php 
+                          }  
+                        ?>
+                        
+                       </div>      
+                       
+
+                       <form action= "" method="POST" class="signaler">
                           <input class="btn" type="text" name="rep_id" value="<?php echo $answer['id']; ?>" hidden>
                           <input class="btn" type="text" name="user_signaled" value="<?php echo $answer['email_auteur']; ?>" hidden >
-                          <input class="btn btn-outline-dark my-2 my-sm-0" type="submit" name="signaler" value="Signaler">
-                      </form>           
-                    </div>  
+                          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" name="signaler">Signaler</button>
+                       </form>           
+                     </div>  
                   </fieldset>
                   <br>
                   <?php

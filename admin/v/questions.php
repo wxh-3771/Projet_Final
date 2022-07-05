@@ -1,6 +1,6 @@
 <?php
+require('../../utilisateur/m/conbd.php');
 require('../c/admin_secu.php');
-require('../c/modifier.php');
 ?>
 
 <!DOCTYPE html>
@@ -52,7 +52,7 @@ require('../c/modifier.php');
                             <td><?= $question['contenu']; ?></td>
                             <td><?= $question['date_publication'];?></td>
                             <td>
-                                <a href="modifier.php?id=<?=$question['id'] ?>"><button class="btn btn-outline-dark my-2 my-sm-0" type="button">Modifier</button></a>
+                                <a href="modifier_questions.php?id=<?=$question['id'] ?>"><button class="btn btn-outline-dark my-2 my-sm-0" type="button">Modifier</button></a>
                                 <a href="../c/supprimer.php?id=<?=$question['id'] ?>"><button class="btn btn-outline-dark my-2 my-sm-0" type="button">Supprimer</button></a>
                             </td>
                         </tr>
