@@ -16,7 +16,7 @@ if(isset($_POST['validate'])){
         $insertAnswer->execute(array($_SESSION['email'], $_SESSION['pseudo'], $idOfTheQuestion, $user_answer, $answer_date));
 
     }else{
-        $errorMsg = "Vous n'avez pas remplit les champs"; //Les messages d'erreurs
+        $errorMsg = "Vous n'avez pas remplit le champ de Répondre"; //Les messages d'erreurs
     }
    
 }

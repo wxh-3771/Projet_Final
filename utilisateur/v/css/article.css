@@ -69,10 +69,10 @@ h3{
     margin-left: 61%;
 }
 
-.rep button:hover{
+/* .rep button:hover{
     color:rgb(235, 19, 19);
     background-color: var(--color);
-}
+} */
 
 .a h3{
    border-bottom: solid 1px #8f7810 ;
@@ -101,9 +101,9 @@ h3{
     margin-bottom: 30px;
 }
 
-.btn-btn{
-    margin-left: 91%;
-    margin-top: -10px;
-    
-  
+.signaler input{
+    font-size: 1em;
+    border-radius: 5px;
+    cursor:pointer;
+    margin-left: 6%;
 }

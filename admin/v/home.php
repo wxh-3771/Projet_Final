@@ -31,7 +31,7 @@ require('../c/admin_secu.php');
 
             <div>
                 <a href ="membres.php"><button class="btn btn-outline-dark my-2 my-sm-0" type="button"> Afficher Les Membres du Forum </button></a>
-                <a href =""><button class="btn btn-outline-dark my-2 my-sm-0" type="button"> Afficher Les Questions du Forum </button></a>
+                <a href ="questions.php"><button class="btn btn-outline-dark my-2 my-sm-0" type="button"> Afficher Les Questions du Forum </button></a>
             </div>
             
 

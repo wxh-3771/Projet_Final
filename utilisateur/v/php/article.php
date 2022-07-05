@@ -68,7 +68,7 @@
                     </div>
                     <textarea rows="4" cols="97" name="answer"></textarea>
                     <br><br>
-                    <button type="submit" name="validate">Répondre</button>
+                    <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" name="validate">Répondre</button>
                  </div>
                 </form>
 
@@ -82,18 +82,18 @@
                     <fieldset class="d"> 
                       <div class="rep1">
                         <div class="a">
-                          <h3> User :  <?= $answer['pseudo_auteur']; ?></h3>
+                          <h4> User :  <?= $answer['pseudo_auteur']; ?></h4>
                           <p>Le : <?= $answer['date_publication'] ?></p>
                       </div>      
                                       
                       <div class="b">
-                        <h4><?= $answer['contenu']; ?></h4> 
+                        <h5><?= $answer['contenu']; ?></h5> 
                       </div>      
 
-                      <form action= "" method="POST">
+                      <form action= "" method="POST" class="signaler">
                           <input class="btn" type="text" name="rep_id" value="<?php echo $answer['id']; ?>" hidden>
                           <input class="btn" type="text" name="user_signaled" value="<?php echo $answer['email_auteur']; ?>" hidden >
-                          <input class="btn-btn" type="submit" name="signaler" value="Signaler">
+                          <input class="btn btn-outline-dark my-2 my-sm-0" type="submit" name="signaler" value="Signaler">
                       </form>           
                     </div>  
                   </fieldset>
