@@ -1,5 +1,4 @@
 <?php 
-session_start();
 require('../c/admin_secu.php');
 ?>
 
@@ -11,7 +10,6 @@ require('../c/admin_secu.php');
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="icon" type="imgs/png" href="../../utilisateur/v/imgs/log.png">
 
-            <link rel="stylesheet" href="../../utilisateur/v/css/footer.css">
             <link rel="stylesheet" href="../../utilisateur/v/css/navbar.css">
 
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -32,7 +30,8 @@ require('../c/admin_secu.php');
             <br>
 
             <div>
-                <a href ="membres.php"><button> Afficher Les Membres du Forum </button></a>
+                <a href ="membres.php"><button class="btn btn-outline-dark my-2 my-sm-0" type="button"> Afficher Les Membres du Forum </button></a>
+                <a href =""><button class="btn btn-outline-dark my-2 my-sm-0" type="button"> Afficher Les Questions du Forum </button></a>
             </div>
             
 

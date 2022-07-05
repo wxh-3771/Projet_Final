@@ -1,5 +1,4 @@
 <?php
-session_start();
 require('../c/admin_secu.php');
 require('../c/membres_action.php');
 
@@ -12,8 +11,7 @@ require('../c/membres_action.php');
          <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="icon" type="imgs/png" href="../../utilisateur/v/imgs/log.png">
-
-         <link rel="stylesheet" href="../../utilisateur/v/css/footer.css">
+         
          <link rel="stylesheet" href="../../utilisateur/v/css/navbar.css">
 
          <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -30,7 +28,10 @@ require('../c/membres_action.php');
 
          <br>
          <h1>Les membres du forum : </h1>
+         <a href="membres_banni.php"><button class="btn btn-outline-dark my-2 my-sm-0" type="button">Les membres Bannis</button></a>
+         <a href="membres_signales.php"><button class="btn btn-outline-dark my-2 my-sm-0" type="button">Les membres Sinalés</button></a>
 
+         <br><br>
          <?php 
             while($users = $RecupUsers->fetch()) {
                ?>
@@ -40,7 +41,6 @@ require('../c/membres_action.php');
                      <th>Prenom</th>
                      <th>Pseudo</th>
                      <th>Email</th>
-                     <th>Etat</th>
                 </tr>
   
                   <tr>
@@ -48,22 +48,6 @@ require('../c/membres_action.php');
                      <td><?= $users['prenom']; ?></td>
                      <td><?= $users['pseudo']; ?></td>
                      <td><?= $users['email'];?></td>
-                     <td>
-                        <?php 
-                          //Dans le cas contraire où l'utilisateur n'est pas banni on affiche un bouton pour le bannir
-                         if($users['valeur_par_defaut'] == 0){
-                            ?>
-                           <p>Ce membre n'est pas banni</p>
-
-                            <?php 
-                            //Donc ici l'utilisateur est banni alors on affiche un bouton pour le debannir
-                            }elseif($users['valeur_par_defaut'] == 1){
-                            ?>
-                            <p>Vous avez Banni ce Mmebre</p>
-                             <?php
-                           }
-                        ?>
-                     </td>
                  </tr>
              </table>
              <br>

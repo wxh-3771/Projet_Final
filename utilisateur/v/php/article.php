@@ -52,7 +52,7 @@
                     
                   <!-- afficher les informations de la question avec le titre  -->
                   <small>
-                    Par L'utilisateur : <?=$question_pseudo_author;?> 
+                    User : <?=$question_pseudo_author;?> 
                     <br>Le <?=$question_publication_date;?>
                   </small>
               </section>
@@ -82,7 +82,7 @@
                     <fieldset class="d"> 
                       <div class="rep1">
                         <div class="a">
-                          <h3> Utilisateur :  <?= $answer['pseudo_auteur']; ?></h3>
+                          <h3> User :  <?= $answer['pseudo_auteur']; ?></h3>
                           <p>Le : <?= $answer['date_publication'] ?></p>
                       </div>      
                                       

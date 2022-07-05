@@ -1,4 +1,5 @@
 <?php 
+session_start();
 if (!isset($_SESSION['admin']) AND isset($_SESSION['auth'])) {
      header("Location: ../../utilisateur/v/php/forum.php");
     exit();

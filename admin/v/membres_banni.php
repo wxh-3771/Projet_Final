@@ -1,7 +1,7 @@
 <?php 
-session_start();
 require('../c/admin_secu.php');
-require('../c/membres_signales.php');
+require('../c/tous_banni.php');
+require('../c/unban.php');
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,6 @@ require('../c/membres_signales.php');
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link rel="icon" type="imgs/png" href="../../utilisateur/v/imgs/log.png">
 
-            <link rel="stylesheet" href="../../utilisateur/v/css/footer.css">
             <link rel="stylesheet" href="../../utilisateur/v/css/navbar.css">
 
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -27,9 +26,7 @@ require('../c/membres_signales.php');
                 require('../../utilisateur/v/includes/navbar.php');
             ?>
             
-            <br>
-            
-            <h1>Faites du bon travail : </h1>
+            <br><br>
 
 
          <table>
@@ -43,44 +40,35 @@ require('../c/membres_signales.php');
 
                <?php
                   //La condtion des trois signalement 
-                  if($getUserSignaled->rowCount() > 0){
+                  if($RecupUsers->rowCount() > 0){
     
-                      while($signal = $getUserSignaled->fetch()){
+                      while($banni = $RecupUsers->fetch()) {
                             ?>     
                             <tr>
-                               <td> <?= $signal['nom']; ?> </td>
-                                <td><?= $signal['prenom']; ?></td>
-                               <td> <?= $signal['pseudo']; ?></td>
-                               <td> <?= $signal['email'];?></td>
+                               <td> <?= $banni['nom']; ?> </td>
+                                <td><?= $banni['prenom']; ?></td>
+                               <td> <?= $banni['pseudo']; ?></td>
+                               <td> <?= $banni['email'];?></td>
                                 <td>
 
                                     <?php
                                         //Dans le cas contraire où l'utilisateur n'est pas banni on affiche un bouton pour le bannir
-                                        if($signal['valeur_par_defaut'] == 0){
+                                        if($banni['valeur_par_defaut'] == 1){
                                           ?>
-                                            <form action ="../c/ban.php" method="POST">
-                                                <input class="btn" type="text" name="user_signaled" value="<?php echo $signal['email'] ;?>" hidden  >
-                                                <button class="btn" type="submit" name="ban" >Bannir</button>
-                                            </form>
-
-                                            <?php 
-                                                //Donc ici l'utilisateur est banni alors on affiche un bouton pour le debannir
-                                            }else{
-                                            ?>
-                                                <form  action="../c/unban.php" method="POST">
-                                                    <input class="btn" type="text" name="user_signaled" value="<?php echo $signal['email']; ?>" hidden >
-                                                    <button class="btn" type="submit" name="unban" >Debannir</button>
+                                                <form  action="" method="POST">
+                                                    <input class="btn" type="text" name="user_signaled" value="<?=$banni['email']?>" hidden >
+                                                    <input class="btn-btn" type="submit" name="unban" value="Débannir">
                                                 </form>
                                                 <?php
-                                        }
-                                        // }    
+                                         }
+                                         
                                     ?>
-                              <!-- </td> -->
+                              </td>
                             </tr>
                             <?php 
                         } 
                     }else{
-                        echo "Aucun membre n'a été signalé";
+                        echo "Vous n'avez banni aucun membre !";
                     }  
                 ?>  
           </table>

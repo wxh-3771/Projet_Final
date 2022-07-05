@@ -9,7 +9,7 @@ if(isset($_POST['signaler'])){
     //celui qui a ete signalé
     $user_signaled = $_POST['user_signaled'];
 
-    $query = $bdd->query("INSERT INTO signales (rep_id, user_email, user_signaled) VALUES ('$user_email','$rep_id','$user_signaled')");
+    $query = $bdd->query("INSERT INTO signales (rep_id, user_email, user_signaled) VALUES ('$rep_id','$user_email','$user_signaled')");
     if($query){
         echo "Cette réponse a été signalée ! ";
     }

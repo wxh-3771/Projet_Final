@@ -17,6 +17,7 @@ if(isset($_POST['validate'])){
         //Les données de l'user
         $user_mail = htmlspecialchars($_POST['email']);
         $user_password = htmlspecialchars($_POST['password']);
+        $user_password = hash("sha256",$_POST['password']);
 
      
 
@@ -30,11 +31,10 @@ if(isset($_POST['validate'])){
             $usersInfos = $checkIfUserExists->fetch();
 
             //Vérifier si le mot de passe est correct
-            if(password_verify($user_password, $usersInfos['mdp'])){
+            if($user_password == $usersInfos['mdp']){
                 if($usersInfos['valeur_par_defaut'] == 0){
                     //Authentifier l'utilisateur sur le site et récupérer ses données dans des variables globales sessions
                     $_SESSION['auth'] = true; //On va l'utilisé pour savoir est que l'utilisateur est connecté ou pas
-                    $_SESSION['id'] = $usersInfos['id'];
                     $_SESSION['lastname'] = $usersInfos['nom'];
                     $_SESSION['firstname'] = $usersInfos['prenom'];
                     $_SESSION['pseudo'] = $usersInfos['pseudo'];
@@ -42,11 +42,10 @@ if(isset($_POST['validate'])){
 
                     //Rediriger l'utilisateur vers sa page de profil 
                     header("Location: profil.php?email=".$_SESSION['email']);
+
                 }else{
                     $errorMsg = "Attention, Vous etes bannis !";
                 }
-                
-                
 
             }else{
                 $errorMsg = "Attention! Votre mot de passe est incorrect !";
