@@ -66,7 +66,7 @@
                     <div>
                       <label> Réponse : </label>
                     </div>
-                    <textarea rows="4" cols="97" name="answer"></textarea>
+                    <textarea rows="4" cols="93" name="answer"></textarea>
                     <br><br>
                     <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" name="validate">Répondre</button>
                  </div>

@@ -14,6 +14,7 @@
             
             <link rel="stylesheet" href="../css/footer.css">
             <link rel="stylesheet" href="../css/navbar.css">
+            <link rel= "stylesheet" href="../css/modifier-mes-qst.css">
 
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -29,7 +30,7 @@
             ?>
             <br><br>
             
-                <div class="w">
+                <div class="conteneur">
                     <?php require('../../c/messages/msgerror_modification.php') ; ?>
                     
                     <?php 
@@ -41,8 +42,8 @@
                                     <input type="text" name="title" value="<?= $question_title; ?>">
                                 </div>
                                 <div class="text">
-                                <label>Categorie de la question</label>
-                                <input type="text" name="title" value="<?= $CategorieInfos['nom']; ?>" disabled="disabled">
+                                 <label>Categorie de la question</label>
+                                 <input type="text" name="title" value="<?= $CategorieInfos['nom']; ?>" disabled="disabled">
                                 </div>
                                 <div class="text">
                                     <label>Contenu de la question</label>

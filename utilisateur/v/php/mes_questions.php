@@ -29,7 +29,7 @@
    
         <header class="profil">
             <div class="text">
-                <h1>Mes Propres Questions Postées : </h1>
+                <h4>Mes Questions Postées : </h1>
                 <br>
             </div>
         </header>
@@ -44,14 +44,14 @@
                     ?>
 
                     <div class="posts ">
-                        <h3>
+                        <h5>
                             <a href="article.php?id=<?= $question['id']; ?>">
                                 <?= $question['titre']; ?>
                             </a>
-                        </h3>
+                        </h5>
                     
                         <div class="second-part">                            
-                            <h5><?= $CategorieInfos['nom']; ?></h5>
+                            <h6><?= $CategorieInfos['nom']; ?></h6>
 
                                 <p>
                                     <?= $question['contenu']; ?>

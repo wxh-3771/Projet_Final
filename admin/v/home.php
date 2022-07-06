@@ -11,6 +11,7 @@ require('../c/admin_secu.php');
             <link rel="icon" type="imgs/png" href="../../utilisateur/v/imgs/log.png">
 
             <link rel="stylesheet" href="../../utilisateur/v/css/navbar.css">
+            <link rel="stylesheet" href="./css/home.css">
 
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -26,10 +27,11 @@ require('../c/admin_secu.php');
 
             <br>
             
+            
             <h1>Faites du bon travail : <?=$_SESSION['pseudo']?></h1>
             <br>
 
-            <div>
+            <div class="btn">
                 <a href ="membres.php"><button class="btn btn-outline-dark my-2 my-sm-0" type="button"> Afficher Les Membres du Forum </button></a>
                 <a href ="questions.php"><button class="btn btn-outline-dark my-2 my-sm-0" type="button"> Afficher Les Questions du Forum </button></a>
             </div>

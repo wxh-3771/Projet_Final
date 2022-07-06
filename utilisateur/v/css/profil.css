@@ -1,35 +1,48 @@
-*{
-    color: rgb(0, 0, 0);
-}
 
-
-.profil .text h2{
-    color:rgb(0, 0, 0);
-    font-weight: lighter;
-    margin-left : 70px;
-    font-family:cursive;
-}
 .profil .text h3{
-    margin:30px;
-}
-.profil p,h4{
     color:rgb(0, 0, 0);
-    margin-left: 100px;
-    font-weight: lighter;
-    font-family: cursive;
+    
+    margin-left : 70px;
+    margin-bottom: 10px;
     
 }
-.p{
-    margin-left: 50px;
+p{
+    margin-left: 90px;
+    font-size: 1rem;
+}
+
+.infos{
+    margin-left: 90px;
+    
+}
+.infos h6{
+    color:#8f6c07 ;
 }
 .profil{
-    border-bottom: 3px solid rgb(0, 0, 0);
-    margin-left: 50px;
-    margin-right: 50px;
+    border-bottom: 2px solid rgb(154, 150, 150);
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 90px;
 }
 
     
 h5{
-    color: rgb(186, 154, 10);
-    text-decoration: underline;
+ margin-left: 70px;
+ font-weight: lighter;
+    
+}
+ a button {
+    margin-top: 20px;
+    margin-left: 90px;
+    font-size: 1.5rem;
+    font-weight: lighter;
+	background-color:#8f6c07;
+    border-radius: 10px;
+	color: white;
+	border: 1px solid #8f6c07;
+	transition: background-color 0.5s, color 0.5s;
+}
+  a button:hover {
+	background-color: inherit;
+	color:#8f6c07;
 }

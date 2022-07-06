@@ -2,8 +2,8 @@
     color: rgb(0, 0, 0);
 }
 
-header h1{
-    margin-left: 2%;
+header h4{
+    margin-left: 8%;
 }
 
 /*posts box*/
@@ -14,20 +14,22 @@ header h1{
     width: 70%;
     margin-left: 15%;  
     border-radius: 9px;
+    background-color: rgb(238, 235, 235);
 }
-.posts h3 a{
+.posts h5 a{
     text-decoration: none;
-    color:rgb(0, 0, 0);
-    font-size: 1rem;
+    color:#8f6c07;
+    font-size: 1.5rem;
     font-weight:lighter;
     font-family:sans-serif;
 
 }
+
 .second-part a{
     text-decoration: none;
-    margin:10px;
-   font-size: 1.5rem;
-   color:rgb(0, 0, 0);
+    margin:15px;
+   font-size: 1.2rem;
+   color:rgb(93, 91, 91);
    cursor: pointer;
    margin-left: 0px;
    
@@ -35,8 +37,10 @@ header h1{
 }
 .second-part a:hover{
     background-color:#8f6c07 ;
+    text-decoration: none;
     color: rgb(0, 0, 0);
-    border-radius: 10px;
+    padding:5px 5px 5px 5px ;
+    border-radius: 5px;
 }
 .second-part p{
     color:rgb(0, 0, 0);

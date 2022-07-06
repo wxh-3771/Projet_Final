@@ -1,0 +1,40 @@
+.conteneur{
+    margin-left: 70px;
+    margin-right: 70px;
+    
+}
+.text{
+    margin: 15px;
+}
+
+.form button {
+    margin-top: 20px;
+    margin-left: 0px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+	background-color:#8f6c07;
+    border-radius: 10px;
+	color: white;
+	border: 1px solid #8f6c07;
+	transition: background-color 0.5s, color 0.5s;
+}
+.form button:hover {
+	background-color: inherit;
+	color:#8f6c07;
+}
+.text textarea{
+    width: 100%; 
+    height: 150px;
+     padding: 12px 20px; 
+     box-sizing: border-box; 
+     border-radius: 5px;
+     border: 2px solid #8f6c07;
+}
+.text input{
+    border: 1px solid #8f6c07;
+    border-radius: 5px;
+    margin: 10px;
+}
+.text label{
+    font-weight: bold;
+}

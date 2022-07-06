@@ -34,6 +34,7 @@
                    if(isset($_SESSION['auth']) AND !isset($_SESSION['admin'])){
                      ?>
                      <a href="profil.php?email=<?= $_SESSION['email']; ?>"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Profil</button></a>
+                     <a href="mes_questions.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Mes Questions</button></a>
                      <a href="../../c/users/logout.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Déconnexion</button></a>
                      <?php
                    }
@@ -44,6 +45,7 @@
                      ?>
                      <a href="../../admin/v/home.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Home</button></a>
                      <a href="../../admin/v/membres.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Membres du Forum</button></a>
+                      <a href="../../admin/v/questions.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Questions du Forum</button></a>
                       <a href="../../admin/c/admin_logout.php"><button class="btn btn-outline-light my-2 my-sm-0" type="button">Déconnexion</button></a>
                      <?php
                    }

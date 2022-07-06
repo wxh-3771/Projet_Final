@@ -30,10 +30,9 @@
             
             <header class="profil">
                 <div class="text"> 
-                 <h1><?php require('../../c/users/bonjour.php');?> <?= $user_pseudo; ?></h1>
-                 <h3>On est ravie de vous revoir parmi nous ! </h3>
-                    
-                 <h3>Voici les dernières Informations de votre compte : </h3>
+                 <h3><?php require('../../c/users/bonjour.php');?> <?= $user_pseudo; ?></h3>
+                 <h5>On est ravie de vous revoir parmi nous ! </h5>
+
                 </div>
             </header> 
             
@@ -42,16 +41,16 @@
                  require('../../c/messages/msgerror_connexion.php');
                 ?>
 
-                <h4>Vos Informations personelles du compte sont les suivantes : </h4>
-                <div class="p">
-                    <h5>@<?= $user_pseudo; ?></h5>
-                    <h5><?= $user_lastname . ' ' . $user_firstname; ?></h5>
+                <p>Vos Informations personelles du compte sont les suivantes : </p>
+                <div class="infos">
+                    <h6>@<?= $user_pseudo; ?></h6>
+                    <h6><?= $user_lastname . ' ' . $user_firstname; ?></h6>
                 </div>
                 
                 <br>
 
                 <div>
-                    <h4>Les questions que vous avez postées sont les suivantes : </h4>
+                    <p>Les questions que vous avez postées sont les suivantes : </p>
                     <a href="mes_questions.php"><button>Mes Questions</button></a>
                 </div>
             </div>

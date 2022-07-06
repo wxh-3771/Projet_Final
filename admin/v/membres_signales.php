@@ -14,6 +14,7 @@ require('../c/ban.php');
 
             <link rel="stylesheet" href="../../utilisateur/v/css/footer.css">
             <link rel="stylesheet" href="../../utilisateur/v/css/navbar.css">
+            <link rel="stylesheet" href="./css/questions.css">
 
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">

@@ -9,7 +9,7 @@
                 <a href="accueil.php">Accueil</a>
                 <a href="forum.php">Forum</a>
                 <a href="regles.php">Reglements</a>
-                <a href="information.php">Formations</a>
+                <a href="informations.php">Formations</a>
                 
             </p>
         </div>

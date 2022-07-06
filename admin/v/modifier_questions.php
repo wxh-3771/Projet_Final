@@ -13,6 +13,7 @@ require('../c/modifier.php');
             
             <link rel="icon" type="imgs/png" href="../../utilisateur/v/imgs/log.png">
             <link rel="stylesheet" href="../../utilisateur/v/css/navbar.css">
+            <link rel="stylesheet" href="./css/modifier-qst.css">
 
             <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -28,7 +29,7 @@ require('../c/modifier.php');
             ?>
             <br><br>
             
-                <div class="w">
+                <div class="conteneur">
                     
                     <?php 
                         if(isset($question_content)){ 
@@ -39,9 +40,9 @@ require('../c/modifier.php');
                                     <input type="text" name="title" value="<?= $question_title; ?>">
                                 </div>
                                 <div class="text">
-                                <label>Categorie de la question</label>
-                                <?php require('../../utilisateur/c/questions/nom_categorie.php');?>
-                                <input type="text" name="title" value="<?= $CategorieInfos['nom']; ?>" disabled="disabled">
+                                  <label>Categorie de la question</label>
+                                  <?php require('../../utilisateur/c/questions/nom_categorie.php');?>
+                                  <input type="text" name="title" value="<?= $CategorieInfos['nom']; ?>" disabled="disabled">
                                 </div>
                                 <div class="text">
                                     <label>Contenu de la question</label>
